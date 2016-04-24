@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    
+    <!-- Bootstrap core CSS -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Custom styles for this template -->
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Music</title>
+
+    <style>
+    @font-face { font-family: Thingbats; src: url('ThingbatsMono.otf'); } </style>
+    
+  
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+   
+  </head>
+
+  <body>
+<div class="fondo">
+  <img src="images/tearsremembering.jpg"/></div>
+
+<h1>Listen to the music</h1>
+
+<div class="row">
+  <div class="col-md-3">
+<div class="container">
+
+<div class="f1">
+  <img src="images/grunge.png"/>
+</div>
+
+<div class="Melvins">
+    <audio id="audio" src="audio/08 Sky Pup.mp3" preload="auto"  ></audio>
+
+<button id ="play" type="button" class="btn btn-default" aria-label="Left Align">
+  <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+</button>
+
+<button id="stop" type="button" class="btn btn-default" aria-label="Left Align">
+  <span class="glyphicon glyphicon-pause" aria-hidden="true"></span>
+</button>
+</div>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="container">
+
+<div class="f2">
+  <img src="images/dreads.png"/>
+</div>
+
+<div class="Uhuru">
+    <audio id="audioo" src="audio/05 Utterance.mp3" preload="auto"  ></audio>
+
+<button id ="play1" type="button" class="btn btn-default" aria-label="Left Align">
+  <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+</button>
+
+<button id="stop1" type="button" class="btn btn-default" aria-label="Left Align">
+  <span class="glyphicon glyphicon-pause" aria-hidden="true"></span>
+</button>
+</div>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="container">
+
+<div class="f3">
+  <img src="images/city.png"/>
+</div>
+
+<div class="Skalpel">
+    <audio id="audiooo" src="audio/09 Theme From Behind The Curtain.mp3" preload="auto"  ></audio>
+
+<button id ="play2" type="button" class="btn btn-default" aria-label="Left Align">
+  <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+</button>
+
+<button id="stop2" type="button" class="btn btn-default" aria-label="Left Align">
+  <span class="glyphicon glyphicon-pause" aria-hidden="true"></span>
+</button>
+</div>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="container">
+
+<div class="f4">
+  <img src="images/flowers.png"/>
+</div>
+
+<div class="Madlib">
+    <audio id="audioooo" src="audio/Flowers (Instrumental).mp3" preload="auto"  ></audio>
+
+<button id ="play3" type="button" class="btn btn-default" aria-label="Left Align">
+  <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+</button>
+
+<button id="stop3" type="button" class="btn btn-default" aria-label="Left Align">
+  <span class="glyphicon glyphicon-pause" aria-hidden="true"></span>
+</button>
+</div>
+</div>
+</div>
+</div>
+
+-->
+<script>
+  var playBtn = document.getElementById('play');
+var stopBtn = document.getElementById('stop');
+
+var playSound = function() {
+  audio.play();
+};
+
+playBtn.addEventListener('click', playSound, false);
+stopBtn.addEventListener('click', function(){audio.pause()}, false);
+
+
+ var playBtn = document.getElementById('play1');
+var stopBtn = document.getElementById('stop1');
+
+var playSound = function() {
+  audioo.play();
+};
+
+playBtn.addEventListener('click', playSound, false);
+stopBtn.addEventListener('click', function(){audioo.pause()}, false);
+
+var playBtn = document.getElementById('play2');
+var stopBtn = document.getElementById('stop2');
+
+var playSound = function() {
+  audiooo.play();
+};
+
+playBtn.addEventListener('click', playSound, false);
+stopBtn.addEventListener('click', function(){audiooo.pause()}, false);
+
+var playBtn = document.getElementById('play3');
+var stopBtn = document.getElementById('stop3');
+
+var playSound = function() {
+  audioooo.play();
+};
+
+playBtn.addEventListener('click', playSound, false);
+stopBtn.addEventListener('click', function(){audioooo.pause()}, false);
+
+</script>
+
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script> 
+  </body>
+</html>
